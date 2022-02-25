@@ -1,0 +1,7 @@
+<svg id="MDI_logout-variant" data-name="MDI / logout-variant" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Boundary" fill="#f2f5ff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+    <rect width="24" height="24" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+  </g>
+  <path id="Path_logout-variant" data-name="Path / logout-variant" d="M9.92,15.59,7.33,13H17V11H7.33L9.92,8.41,8.5,7l-5,5,5,5,1.42-1.41M5,3A2,2,0,0,0,3,5V9.67l2-2V5H19V19H5V16.33l-2-2V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5a1.993,1.993,0,0,0-2-2Z" fill="#f2f5ff"/>
+</svg>
