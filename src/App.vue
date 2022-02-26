@@ -1,11 +1,10 @@
 <script setup>
-import AuthView from "../src/views/AuthView.vue";
 </script>
 
 <template>
-  <div>
-    <AuthView />
-  </div>
+
+    <router-view></router-view>
+
 </template>
 <style>
 .signIn {
