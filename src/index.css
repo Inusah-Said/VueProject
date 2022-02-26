@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'caliga';
+    src: local('MyFont'),
+    url(./assets/assets/fonts/CaligatureHunters-eZ4Wl.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+    font-family: 'vernir';
+    src: local('vernir'),
+    url(./assets/assets/fonts/AvenirLTStd-Black.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
