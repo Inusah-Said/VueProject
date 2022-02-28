@@ -8,6 +8,10 @@ const toggleShowPassword = (evt) => {
   evt.preventDefault();
   showPassword.value = !showPassword.value;
 };
+// const formSubmit = (evt)=>{
+//   evt.preventDefault();
+//   navigate.push('/about')
+// }
 </script>
 <template>
   <AuthViewContainer>
@@ -84,13 +88,15 @@ const toggleShowPassword = (evt) => {
 
           <p class="text-xs text-appPurple font-vernir">Forgot Password?</p>
         </div>
+<router-link :to="{name:'about'}">
+  <button
+      type="submit"
+      class="bg-appPurple w-full py-2 my-3 text-white rounded-md font-vernir"
+  >
+    Login
+  </button>
+</router-link>
 
-        <button
-          type="submit"
-          class="bg-appPurple w-full py-2 my-3 text-white rounded-md font-vernir"
-        >
-          Login
-        </button>
         <p class="text-xs text-center font-medium text-appBlack font-vernir">
           Not registered yet?
           <span class="text-xs space-x-2 text-appPurple font-medium">
