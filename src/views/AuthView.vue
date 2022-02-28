@@ -1,6 +1,7 @@
 <script setup>
 import AuthViewContainer from "../components/containers/AuthViewContainer.vue";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 import googleIcon from "../assets/assets/googleIcon.png";
 
 let showPassword = ref(false);
@@ -8,10 +9,11 @@ const toggleShowPassword = (evt) => {
   evt.preventDefault();
   showPassword.value = !showPassword.value;
 };
-// const formSubmit = (evt)=>{
-//   evt.preventDefault();
-//   navigate.push('/about')
-// }
+
+const router = useRouter();
+const formSubmit = () => {
+  router.push("/home");
+};
 </script>
 <template>
   <AuthViewContainer>
@@ -33,7 +35,7 @@ const toggleShowPassword = (evt) => {
         alt="sign in with email"
       />
 
-      <form class="w-full">
+      <form class="w-full" @submit.prevent="formSubmit">
         <label class="block space-y-1">
           <span class="block font-medium text-appBlack font-vernir">
             Email
@@ -88,14 +90,14 @@ const toggleShowPassword = (evt) => {
 
           <p class="text-xs text-appPurple font-vernir">Forgot Password?</p>
         </div>
-<router-link :to="{name:'about'}">
-  <button
-      type="submit"
-      class="bg-appPurple w-full py-2 my-3 text-white rounded-md font-vernir"
-  >
-    Login
-  </button>
-</router-link>
+        <router-link :to="{ name: 'about' }">
+          <button
+            type="submit"
+            class="bg-appPurple w-full py-2 my-3 text-white rounded-md font-vernir"
+          >
+            Login
+          </button>
+        </router-link>
 
         <p class="text-xs text-center font-medium text-appBlack font-vernir">
           Not registered yet?
